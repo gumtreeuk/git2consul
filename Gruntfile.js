@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           postinst: {
             src: 'debian_package/postinst'
           },
-          dependencies: "nodejs(=>4.4.5), nodejs(<<5), git",
+          dependencies: "nodejs(<<5), nodejs(>=4.4.5), git",
           directories: ['/var/log/git2consul']
         },
         files: [
